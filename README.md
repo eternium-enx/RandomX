@@ -1,4 +1,4 @@
-# RnXkeccak
+# RnX-keccak
 RnXkeccak is a variant of the RandomX proof-of-work (PoW) algorithm that is optimized for general-purpose CPUs. RnXkeccak and RandomX use random code execution (hence the name) together with several memory-hard techniques to minimize the efficiency advantage of specialized hardware. RnXkeccak differs from RandomX by performing a sha3-512 hash of the final outputs of the executed programs instead of Blake2b. Additionally, a variable scratchpad is introduced which scales with Moore's Law.
 
 ## Overview
