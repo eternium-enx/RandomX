@@ -38,5 +38,5 @@ Final reports from all four audits are available in the [audits](audits/) direct
 * [hyc](https://github.com/hyc) - original idea of using random code execution for PoW
 * [Other contributors](https://github.com/tevador/RandomX/graphs/contributors)
 
-RnXkeccak uses some source code from the following 3rd party repositories:
+RnX-keccak uses some source code from the following 3rd party repositories:
 * Argon2d hashing function: https://github.com/P-H-C/phc-winner-argon2
