@@ -32,7 +32,7 @@ The first audit was generously funded by [Arweave](https://www.arweave.org/), on
 Final reports from all four audits are available in the [audits](audits/) directory. None of the audits found any critical vulnerabilities, but several changes in the algorithm and the code were made as a direct result of the audits. More details can be found in the [final report by OSTIF](https://ostif.org/four-audits-of-randomx-for-monero-and-arweave-have-been-completed-results/).
 
 ## Acknowledgements
-* [tevador](https://github.com/tevador/RandomX) - RandomX
+* [RandomX](https://github.com/tevador/RandomX) - RandomX
 * [tevador](https://github.com/tevador) - RandomX author
 * [SChernykh](https://github.com/SChernykh) - contributed significantly to the design of RandomX
 * [hyc](https://github.com/hyc) - original idea of using random code execution for PoW
