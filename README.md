@@ -1,11 +1,11 @@
 # RnX-keccak
-RnXkeccak is a variant of the RandomX proof-of-work (PoW) algorithm that is optimized for general-purpose CPUs. RnXkeccak and RandomX use random code execution (hence the name) together with several memory-hard techniques to minimize the efficiency advantage of specialized hardware. RnXkeccak differs from RandomX by performing a sha3-512 hash of the final outputs of the executed programs instead of Blake2b. Additionally, a variable scratchpad is introduced which scales with Moore's Law.
+RnX-keccak is a variant of the RandomX proof-of-work (PoW) algorithm that is optimized for general-purpose CPUs. RnXkeccak and RandomX use random code execution (hence the name) together with several memory-hard techniques to minimize the efficiency advantage of specialized hardware. RnXkeccak differs from RandomX by performing a sha3-512 hash of the final outputs of the executed programs instead of Blake2b. Additionally, a variable scratchpad is introduced which scales with Moore's Law.
 
 ## Overview
 
-RnXkeccak utilizes a virtual machine that executes programs in a special instruction set that consists of integer math, floating point math and branches. These programs can be translated into the CPU's native machine code on the fly (example: [program.asm](doc/program.asm)). At the end, the outputs of the executed programs are consolidated into a 256-bit result using a cryptographic hashing function ([Sha3-512](https://keccak.team/files/Keccak-implementation-3.2.pdf)).
+RnX-keccak utilizes a virtual machine that executes programs in a special instruction set that consists of integer math, floating point math and branches. These programs can be translated into the CPU's native machine code on the fly (example: [program.asm](doc/program.asm)). At the end, the outputs of the executed programs are consolidated into a 256-bit result using a cryptographic hashing function ([Sha3-512](https://keccak.team/files/Keccak-implementation-3.2.pdf)).
 
-RnXkeccak can operate in two main modes with different memory requirements:
+RnX-keccak can operate in two main modes with different memory requirements:
 
 * **Fast mode** - requires 2080 MiB of shared memory.
 * **Light mode** - requires only 256 MiB of shared memory, but runs significantly slower
